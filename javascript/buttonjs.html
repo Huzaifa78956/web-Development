@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        
+        function huzaifa()
+        {
+        var nm = prompt("Enter your First Name");
+        var n1 = parseInt(prompt("enter your fvt Number: "));
+        var n2 = parseInt(prompt("enter your Second Name: "));
+        
+        var n3 = n1 + n2;
+        var n4 = n1 * n2;
+        var n5 = n1 - n2;
+    
+        window.alert(nm);
+        
+        document.writeln(nm + '<br>');
+        document.writeln(n3 + '<br>');
+        document.writeln(n4 + '<br>');
+        document.writeln(n5 + '<br>')
+    }
+        function Rs()
+        {
+var table = 7;
+        for (var i=1; i<=10; i++)
+        {
+var n3 =  table * i;
+document.writeln("<p>" +n3+  "</p>")
+        }
+    }
+        var cars = ['toyota', 'MG', 'Land cruiser', 'civix Turbo'];
+    </script>
+<p id="js"></p>
+
+<input type="button" value="My fvt" onclick="document.getElementById('js').innerHTML = cars[2]">
+<br><br>
+<input type="button" value="My fvt dream cars" onclick="document.getElementById('js').innerHTML = cars[0]">
+<br><br>
+<input type="button" value="click" onclick="Rs()">
+</head>
+
+<body>
+</body>
+
+</html>

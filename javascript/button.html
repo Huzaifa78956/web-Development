@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+  function cond()
+        {
+var r1 = parseInt(prompt("Enter First Number")); 
+var r2 =  parseInt(prompt("Enter Second number"));
+
+        if (r1 > r2) {
+            document.getElementById("rs").innerHTML = "First Nuumber is Greater";
+            // document.writeln("First Nuumber is Greater");
+        }
+        else {
+            document.getElementById("rs").innerHTML = "Second Nuumber is Greater";
+            // document.writeln("Second Nuumber is Greater");
+        }
+        }
+
+
+
+        function od()
+        {
+var n1 = parseInt(prompt("Enter First Number"));
+var n2 = parseInt(prompt("enter Second Number"));
+var n3 = n1 + n2;
+document.getElementById("rs").innerHTML = n3;;
+}
+
+function mul(){
+var m1 = parseInt(prompt("Enter First Number:"));
+var m2 = parseInt(prompt("Enter Your second:"));
+var m3 = m1 * m2;
+document.getElementById("rs").innerHTML = m3;
+}
+
+function sub(){
+var s1 = parseInt(prompt("Enter First Number:"));
+var s2 = parseInt(prompt("Enter Your second:"));
+var s3 = s1 - s2;
+document.getElementById("rs").innerHTML = s3;
+}
+
+function div(){
+var d1 = parseInt(prompt("Enter First Number:"));
+var d2 = parseInt(prompt("Enter Your second:"));
+var d3 = d1 / d2;
+document.getElementById("rs").innerHTML = d3;
+}
+
+function lop()
+{
+    for(var i = 0; i<=10; i++)
+    {
+        console.log(i);
+    }
+}
+
+    </script>
+</head>
+<body>
+
+    <h2 id="rs" align="center" style="background-color: aqua;"></h2>
+
+    <table align="center" border="1" style="padding: 0%; margin: 0;">
+    <tr>
+        <td>
+    <input type="button" value="add ammount" onclick="od()">
+</td>
+</tr>
+<tr>
+    <td>
+    <input type="button" value="multiply amount" onclick="mul()">
+</td>
+</tr>
+<tr>
+    <td>
+    <input type="button" value="Subtract amount" onclick="sub()">
+</td>
+</tr>
+<tr>
+<td>
+    <input type="button" value="devide amount" onclick="div()">
+</td>
+</tr>
+<tr>
+    <td>
+    <input type="button" value="press Condition" onclick="cond()">
+</td>
+</tr>
+<tr>
+    <td>
+        <input type="button" value="loop" onclick="lop()">
+    </td>
+</tr>
+</table>
+</body>
+</html>

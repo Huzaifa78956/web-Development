@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <p>Total Marks</p>
+    <p id="om"></p>
+    <br><br>
+    <p>percentage</p>
+    <p id="perc"></p>
+    <br><br>
+    <p>Grade</p>
+    <p id="gd"></p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+   
+    <script>
+        var n1 = parseInt(prompt("Enter your Physics Marks"));
+        var n2 = parseInt(prompt("Enter your Math Marks"));
+        var n3 = parseInt(prompt("Enter your PakistanStudy Marks"));
+        var n4 = parseInt(prompt("Enter your Biology Marks"));
+        var n5 = parseInt(prompt("Enter your Chemistry Marks"));
+var tm = 500;
+var ob = n1+n2+n3+n4+n5;
+var per = (ob/tm) * 100;
+
+
+document.getElementById('om').innerHTML = ob;
+
+document.getElementById('perc').innerHTML = per;
+
+
+
+
+    
+        if(per >= 80)
+        {
+document.getElementById('gd').innerHTML = "A+"
+        }
+        else
+        if (per >= 70)
+        {
+            document.getElementById('gd').innerHTML = "A"
+        }
+        else
+        if (per >= 60)
+        {
+            document.getElementById('gd').innerHTML = "B"
+        }
+        else
+        {
+            document.getElementById('gd').innerHTML ="fail"
+        }
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
